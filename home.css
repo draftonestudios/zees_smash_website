@@ -3,6 +3,64 @@
   padding: 0px;
   box-sizing: border-box;
 }
+/* Hamburger Menu Button */
+.hamburger {
+  display: none; /* Hidden by default (only shows on mobile) */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1000;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333; /* Change color to match your design */
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.hamburger:hover span {
+  background-color: #666; /* Slightly lighter on hover */
+}
+/* Mobile Styles (screens 768px and smaller) */
+@media (max-width: 768px) {
+  
+  /* Show the hamburger button */
+  .hamburger {
+    display: block;
+  }
+  
+  /* Hide the navigation menu by default */
+  #nav-menu {
+    display: none;
+    flex-direction: column; /* Stack links vertically */
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Adjust based on your nav height */
+    left: 0;
+    background-color: white; /* Match your nav background */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  /* When menu is active, show it */
+  #nav-menu.active {
+    display: flex;
+  }
+  
+  /* Make each nav item full width */
+  #nav-menu li {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #nav-menu a {
+    display: block;
+    padding: 1rem;
+  }
+}
 ul {
   list-style-type: none;
   font-family: Bahnschrift;
