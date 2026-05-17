@@ -200,20 +200,19 @@ p{
     outline: solid #60a5fa;
   }
 .nav-menu a:active {
-    tranform: scale(0.98);
+    transform: scale(0.98);
      transform: translateY(4px);
   }
  .nav-menu a:aria-current="page"] {
     background-color: #3b82f6;
     color: white;
   }
-}
 .logo {
   margin: 0 2rem;
   flex-shrink: 0;
 }
 .nav-link {
-  color: cbd5e1;
+  color: #cbd5e1;
   transition: all 0.3s ease;
   border-radius: 6px;
 }
