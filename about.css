@@ -129,7 +129,7 @@ p{
 }
 .navbar {
   background-color: #F5CC00;
-  padding: 1rem;
+  padding: 1rem 2rem;
   margin: 0px auto;
   overflow: hidden;
   max-width: 90%;
@@ -139,8 +139,10 @@ p{
   align-items: center;
 }
 .nav-container {
-  max-width: 80%;
+  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -167,7 +169,8 @@ p{
 }
 .nav-menu {
   display: flex;
-  gap: 10rem;
+  gap: clamp(1rem, 3vw, 3rem);
+  align-items: center;
 }
 .nav-menu a:hover{
      color: white;
@@ -186,10 +189,8 @@ p{
   }
 }
 .logo {
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 700;
-   margin: 0 7rem;
+  margin: 0 2rem;
+  flex-shrink: 0;
 }
 .nav-link {
   color: cbd5e1;
