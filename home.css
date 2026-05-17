@@ -150,66 +150,77 @@ p{
 .navbar {
   background-color: #F5CC00;
   padding: 1rem 2rem;
-  margin: 0px auto;
+  margin: 0 auto;
   overflow: hidden;
   max-width: 90%;
-    display:flex;
+  display: flex;
   border-radius: 0 0 12px 12px;
- justify-content: space-between;  /* centers horizontally */
+  justify-content: space-between;
   align-items: center;
 }
+
 .nav-container {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .navbar a {
-  font-size: 1.5rem;
   color: #f23827;
-  text-shadow: 
-  -2px -2px 0 black,
-   2px -2px 0 black,
-  -2px  2px 0 black,
-   2px  2px 0 black,
-  -2px  0   0 black,
-   2px  0   0 black,
-   0   -2px 0 black,
-   0    2px 0 black;
+  text-shadow:
+    -2px -2px 0 black,
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black,
+    -2px  0   0 black,
+     2px  0   0 black,
+     0   -2px 0 black,
+     0    2px 0 black;
   text-decoration: none;
   padding: 15px;
   margin-top: 15px;
-  display: inline-block; 
+  display: inline-block;
   transition: transform 0.2s ease, color 0.2s ease;
   text-align: center;
- font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 2vw, 1.5rem);
 }
+
 .nav-menu {
   display: flex;
   gap: clamp(1rem, 3vw, 3rem);
   align-items: center;
 }
-.nav-menu a:hover{
-     color: white;
-  transform: translateY(-3px); 
-  }
+
+.nav-menu a:hover {
+  color: white;
+  transform: translateY(-3px);
+}
+
 .nav-menu a:focus {
-    outline: solid #60a5fa;
-  }
+  outline: 2px solid #60a5fa;
+  outline-offset: 2px;
+}
+
 .nav-menu a:active {
-    transform: scale(0.98);
-     transform: translateY(4px);
-  }
- .nav-menu a:aria-current="page"] {
-    background-color: #3b82f6;
-    color: white;
-  }
+  transform: scale(0.98);
+}
+
+.nav-menu a[aria-current="page"] {
+  background-color: #3b82f6;
+  color: white;
+}
+
 .logo {
   margin: 0 2rem;
   flex-shrink: 0;
+}
+
+.logo img {
+  width: clamp(120px, 12vw, 180px);
+  height: auto;
 }
 .nav-link {
   color: #cbd5e1;
